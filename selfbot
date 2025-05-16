@@ -1,7 +1,10 @@
 import discord
 import asyncio
+import os
 from discord.ext import tasks
 import time
+
+TOKEN = os.getenv("b")
 
 client = discord.Client()
 
@@ -37,4 +40,4 @@ async def msg_loop():
     channel = client.get_channel(1198228961000423486)
     await channel.send("woooo")
 
-client.run('MTM3MDgwMTUxNDMzOTM2OTA0MA.Gi7N5C.9NkMcFM4SaTGEl5XbA-N2GynWUGTMTVpQ_X92Q')
+client.run('TOKEN')
